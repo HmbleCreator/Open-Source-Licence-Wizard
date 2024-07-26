@@ -1,0 +1,36 @@
+[
+  ["Project Goals and Objectives", [
+    ["Is your project primarily for research purposes?", "research"],
+    ["Is your project intended to be a commercial product?", "commercial"],
+    ["Is your project a community tool?", "community_tool"],
+    ["Is your project for internal use only?", "internal_use"],
+    ["Is your target audience primarily developers?", "developer_audience"],
+    ["Is your target audience primarily businesses?", "business_audience"],
+    ["Do you want to encourage community contributions?", "encourage_contributions"],
+    ["Do you plan to monetize the project directly?", "monetization"]
+  ]],
+  ["Intellectual Property and Rights", [
+    ["Do you want to grant patent rights?", "patent_rights"],
+    ["Are there trademarks associated with the project?", "trademarks"]
+  ]],
+  ["License Compatibility", [
+    ["Does your project incorporate third-party open-source components?", "third_party_components"],
+    ["Are you considering dual licensing?", "dual_licensing"]
+  ]],
+  ["Desired Level of Control", [
+    ["Do you want strong control over derivative works?", "control_derivatives"],
+    ["Do you require attribution for the original work?", "attribution"]
+  ]],
+  ["Community and Collaboration", [
+    ["Is fostering a strong community very important for your project?", "strong_community"],
+    ["Do you prefer an open development model?", "open_development"]
+  ]],
+  ["Legal and Business Considerations", [
+    ["Are there specific legal compliance requirements for your project?", "legal_compliance"],
+    ["Is minimizing legal and business risks a top priority?", "minimize_risks"]
+  ]],
+  ["License Terms and Conditions", [
+    ["Do you want to provide warranties for the software?", "warranties"],
+    ["Do you want to include indemnification clauses?", "indemnification"]
+  ]]
+]

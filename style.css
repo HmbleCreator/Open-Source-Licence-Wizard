@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze&display=swap');
+
+.wizard-button {
+    background-color: #915fe3; /* A magical purple color */
+    color: rgb(182, 105, 234); /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block for proper spacing */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(197, 20, 224, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.wizard-button:hover {
+    background-color: #c31ff0; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+body {
+    background-color: #0e1117;
+    background-image: 
+        url("https://www.transparenttextures.com/patterns/stardust.png"),
+        linear-gradient(to bottom, #0e1117, #1a1f2c),
+        radial-gradient(circle at top right, rgba(255, 192, 203, 0.3) 0%, transparent 60%),
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 100% 100%, 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background-attachment: fixed;
+    animation: stars 240s linear infinite;
+    color: white;
+}
+
+@keyframes stars {
+    0% {
+        background-position: 0 0, 0 0, 40px 60px, 130px 270px, 70px 100px;
+    }
+    100% {
+        background-position: 0 0, 550px 550px, 590px 610px, 680px 920px, 220px 250px;
+    }
+}
+
+.moon {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #f5f3ce;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #f5f3ce;
+}
+
+.star {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Twinkling star animation */
+@keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Generate 50 twinkling stars */
+.star:nth-child(1) { top: 5%; left: 10%; animation: twinkle 3s infinite; }
+.star:nth-child(2) { top: 10%; left: 20%; animation: twinkle 4s infinite; }
+.star:nth-child(3) { top: 15%; left: 30%; animation: twinkle 5s infinite; }
+.star:nth-child(4) { top: 20%; left: 40%; animation: twinkle 3.5s infinite; }
+.star:nth-child(5) { top: 25%; left: 50%; animation: twinkle 4.5s infinite; }
+.star:nth-child(6) { top: 30%; left: 60%; animation: twinkle 3.2s infinite; }
+.star:nth-child(7) { top: 35%; left: 70%; animation: twinkle 4.7s infinite; }
+.star:nth-child(8) { top: 40%; left: 80%; animation: twinkle 3.8s infinite; }
+.star:nth-child(9) { top: 45%; left: 90%; animation: twinkle 4.2s infinite; }
+.star:nth-child(10) { top: 50%; left: 5%; animation: twinkle 3.3s infinite; }
+.star:nth-child(11) { top: 55%; left: 15%; animation: twinkle 4.8s infinite; }
+.star:nth-child(12) { top: 60%; left: 25%; animation: twinkle 3.7s infinite; }
+.star:nth-child(13) { top: 65%; left: 35%; animation: twinkle 4.3s infinite; }
+.star:nth-child(14) { top: 70%; left: 45%; animation: twinkle 3.9s infinite; }
+.star:nth-child(15) { top: 75%; left: 55%; animation: twinkle 4.6s infinite; }
+.star:nth-child(16) { top: 80%; left: 65%; animation: twinkle 3s infinite; }
+.star:nth-child(17) { top: 85%; left: 75%; animation: twinkle 4s infinite; }
+.star:nth-child(18) { top: 90%; left: 85%; animation: twinkle 5s infinite; }
+.star:nth-child(19) { top: 95%; left: 95%; animation: twinkle 3.5s infinite; }
+.star:nth-child(20) { top: 5%; left: 90%; animation: twinkle 4.5s infinite; }
+.star:nth-child(21) { top: 10%; left: 80%; animation: twinkle 3.2s infinite; }
+.star:nth-child(22) { top: 15%; left: 70%; animation: twinkle 4.7s infinite; }
+.star:nth-child(23) { top: 20%; left: 60%; animation: twinkle 3.8s infinite; }
+.star:nth-child(24) { top: 25%; left: 50%; animation: twinkle 4.2s infinite; }
+.star:nth-child(25) { top: 30%; left: 40%; animation: twinkle 3.3s infinite; }
+.star:nth-child(26) { top: 35%; left: 30%; animation: twinkle 4.8s infinite; }
+.star:nth-child(27) { top: 40%; left: 20%; animation: twinkle 3.7s infinite; }
+.star:nth-child(28) { top: 45%; left: 10%; animation: twinkle 4.3s infinite; }
+.star:nth-child(29) { top: 50%; left: 95%; animation: twinkle 3.9s infinite; }
+.star:nth-child(30) { top: 55%; left: 85%; animation: twinkle 4.6s infinite; }
+.star:nth-child(31) { top: 60%; left: 75%; animation: twinkle 3s infinite; }
+.star:nth-child(32) { top: 65%; left: 65%; animation: twinkle 4s infinite; }
+.star:nth-child(33) { top: 70%; left: 55%; animation: twinkle 5s infinite; }
+.star:nth-child(34) { top: 75%; left: 45%; animation: twinkle 3.5s infinite; }
+.star:nth-child(35) { top: 80%; left: 35%; animation: twinkle 4.5s infinite; }
+.star:nth-child(36) { top: 85%; left: 25%; animation: twinkle 3.2s infinite; }
+.star:nth-child(37) { top: 90%; left: 15%; animation: twinkle 4.7s infinite; }
+.star:nth-child(38) { top: 95%; left: 5%; animation: twinkle 3.8s infinite; }
+.star:nth-child(39) { top: 5%; left: 85%; animation: twinkle 4.2s infinite; }
+.star:nth-child(40) { top: 10%; left: 75%; animation: twinkle 3.3s infinite; }
+.star:nth-child(41) { top: 15%; left: 65%; animation: twinkle 4.8s infinite; }
+.star:nth-child(42) { top: 20%; left: 55%; animation: twinkle 3.7s infinite; }
+.star:nth-child(43) { top: 25%; left: 45%; animation: twinkle 4.3s infinite; }
+.star:nth-child(44) { top: 30%; left: 35%; animation: twinkle 3.9s infinite; }
+.star:nth-child(45) { top: 35%; left: 25%; animation: twinkle 4.6s infinite; }
+.star:nth-child(46) { top: 40%; left: 15%; animation: twinkle 3s infinite; }
+.star:nth-child(47) { top: 45%; left: 5%; animation: twinkle 4s infinite; }
+.star:nth-child(48) { top: 50%; left: 90%; animation: twinkle 5s infinite; }
+.star:nth-child(49) { top: 55%; left: 80%; animation: twinkle 3.5s infinite; }
+.star:nth-child(50) { top: 60%; left: 70%; animation: twinkle 4.5s infinite; }
+
+/* Shooting star animation */
+.shooting-star {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1), 0 0 0 8px rgba(255,255,255,0.1), 0 0 20px rgba(255,255,255,1);
+    animation: shoot 6s linear infinite;
+}
+
+.shooting-star::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes shoot {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(315deg) translateX(-1000px); /* Move to the left */
+        opacity: 0;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Kalnia Glaze', sans-serif;
+}
