@@ -1,2 +1,2 @@
-collections
+python-collections
 streamlit
