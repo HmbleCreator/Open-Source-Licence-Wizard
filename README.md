@@ -20,8 +20,6 @@ Our goal is to empower developers to make informed decisions about licensing the
 
 ## Features
 
-![flowchart](./assets/flowchart.jpeg)
-
 Features Overview
 
 - **Interactive Questionnaire**: Users answer a series of questions about their project and preferences.
@@ -31,6 +29,8 @@ Features Overview
 - **Responsive Design**: Works well on various screen sizes and devices.
 
 ## Installation
+
+![flowchart](./assets/flowchart.jpeg)
 
 Installation Steps
 
