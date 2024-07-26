@@ -53,7 +53,7 @@ To set up the Open Source License Wizard on your local machine, follow these ste
 
 4. Run the Streamlit app:
    ```bash
-   streamlit run app.py
+   streamlit run main.py
    ```
 
 ## Usage
