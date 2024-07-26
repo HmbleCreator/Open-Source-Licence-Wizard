@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze&display=swap');
 
+
+    /* Set a maximum width for the main container */
+    .main {
+        max-width: 900px; /* Adjust this value as needed */
+        margin: 0 auto; /* Center the container */
+    }
+    /* Add additional styles here */
+
+
 .wizard-button {
     background-color: #915fe3; /* A magical purple color */
     color: rgb(182, 105, 234); /* Text color */
@@ -20,6 +29,21 @@
     background-color: #c31ff0; /* Darker purple on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.title {
+    font-family: "Kalnia Glaze", sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
     background-color: #0e1117;
