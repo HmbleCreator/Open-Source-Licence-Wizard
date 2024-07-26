@@ -139,5 +139,3 @@ We hope the Open Source License Wizard helps you navigate the world of open-sour
 - **Contributing Guidelines**: A graphic that outlines the contribution process.
 - **Future Scope**: An infographic highlighting future plans for the project.
 - **Future Goals**: A visual representation of long-term goals and directions.
-
-By incorporating these visuals, your README will not only be more engaging but also provide clearer information to users.
