@@ -12,7 +12,7 @@
 
 ## Introduction
 
-Open Source License Wizard Banner
+![Banner Image](https://example.com/banner.jpg)
 
 The Open Source License Wizard is an interactive Streamlit application designed to help developers choose the most appropriate open-source license for their projects. With its enchanting starry interface and intuitive questionnaire, this wizard simplifies the often complex process of license selection.
 
