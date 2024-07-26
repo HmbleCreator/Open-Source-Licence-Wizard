@@ -1,5 +1,3 @@
-Certainly! Adding visuals to your README file can significantly enhance its appeal and help convey information more effectively. Below, I've included suggestions for visuals you can incorporate, along with an updated version of your README file that indicates where to place these visuals.
-
 # 🔮 Open Source License Wizard 🧙‍♂️
 
 ## Table of Contents
