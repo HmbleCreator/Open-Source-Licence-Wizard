@@ -10,7 +10,7 @@ def load_licenses(file_path):
     return licenses
 
 # Load licenses from the specified file
-licenses = load_licenses("licence-list.txt")
+licenses = load_licenses(r"C:\Users\amiku\OneDrive\Desktop\licence-wizard\licence-list.txt")
 
 # Load questions from the file
 def load_questions(file_path):
@@ -19,15 +19,15 @@ def load_questions(file_path):
     return questions
 
 # Load questions from the specified file
-questions = load_questions("questions.txt")
+questions = load_questions(r"C:\Users\amiku\OneDrive\Desktop\licence-wizard\questions.txt")
 
 
 def load_css(file_path):
     with open(file_path, 'r') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# Can also use absolute file path
-load_css('style.css')
+# Use an absolute file path
+load_css(r'C:\Users\amiku\OneDrive\Desktop\licence-wizard\style.css')
 
 # Custom CSS for background color, stars, and background image
 st.markdown("""

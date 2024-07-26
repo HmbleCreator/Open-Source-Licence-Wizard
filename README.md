@@ -1,5 +1,3 @@
-Certainly! Adding visuals to your README file can significantly enhance its appeal and help convey information more effectively. Below, I've included suggestions for visuals you can incorporate, along with an updated version of your README file that indicates where to place these visuals.
-
 # 🔮 Open Source License Wizard 🧙‍♂️
 
 ## Table of Contents
@@ -53,7 +51,7 @@ To set up the Open Source License Wizard on your local machine, follow these ste
 
 4. Run the Streamlit app:
    ```bash
-   streamlit run app.py
+   streamlit run main.py
    ```
 
 ## Usage
@@ -141,5 +139,3 @@ We hope the Open Source License Wizard helps you navigate the world of open-sour
 - **Contributing Guidelines**: A graphic that outlines the contribution process.
 - **Future Scope**: An infographic highlighting future plans for the project.
 - **Future Goals**: A visual representation of long-term goals and directions.
-
-By incorporating these visuals, your README will not only be more engaging but also provide clearer information to users.
