@@ -2,6 +2,20 @@ import collections
 import streamlit as st
 from collections import defaultdict, OrderedDict
 import json
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+
+################################################################################
+################################################################################
+
+# Download necessary NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
+
+
 
 # Load licenses from the file
 def load_licenses(file_path):
@@ -28,6 +42,10 @@ def load_css(file_path):
 
 # Use an absolute file path
 load_css('style.css')
+
+
+################################################################################
+################################################################################
 
 # Custom CSS for background color, stars, and background image
 st.markdown("""
@@ -95,13 +113,107 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# Defining the Questinaire funcution
 
+
+################################################################################
+################################################################################
+#"""This function uses NLTK for tokenization and stop word removal, and then applies
+#    TF-IDF to extract the most important keywords from the project description."""
+
+
+def extract_keywords(text):
+    # Tokenize and remove stopwords
+    stop_words = set(stopwords.words('english'))
+    word_tokens = word_tokenize(text.lower())
+    filtered_tokens = [w for w in word_tokens if w not in stop_words and w.isalnum()]
+
+    # Use TF-IDF to get important keywords
+    vectorizer = TfidfVectorizer()
+    tfidf_matrix = vectorizer.fit_transform([' '.join(filtered_tokens)])
+    feature_names = vectorizer.get_feature_names_out()
+    
+    # Get top 15 keywords (increased from 10 to give more options)
+    dense = tfidf_matrix.todense()
+    episode = dense[0].tolist()[0]
+    phrase_scores = [pair for pair in zip(range(0, len(episode)), episode) if pair[1] > 0]
+    sorted_phrase_scores = sorted(phrase_scores, key=lambda t: t[1] * -1)
+    keywords = [feature_names[word_id] for (word_id, score) in sorted_phrase_scores[:15]]
+    
+    return keywords
+
+
+#"""This function matches the extracted keywords to the questions in our
+#    questionnaire, setting preferences based on keyword matches."""
+
+def match_keywords_to_questions(keywords):
+    keyword_preferences = {}
+    for category, category_questions in questions:
+        for question, key in category_questions:
+            if any(keyword in question.lower() for keyword in keywords):
+                keyword_preferences[key] = True
+    return keyword_preferences
+
+
+
+
+
+################################################################################
+################################################################################
+
+
+def sidebar_content():
+    st.sidebar.header("Project Description")
+    project_description = st.sidebar.text_area("Describe your project:", height=150)
+    
+    if st.sidebar.button("Extract Keywords", key="extract_keywords_button"):
+        if project_description:
+            extracted_keywords = extract_keywords(project_description)
+            st.session_state.keywords = extracted_keywords
+        else:
+            st.sidebar.warning("Please provide a project description.")
+
+    st.sidebar.header("Keywords")
+    if st.session_state.keywords:
+        selected_keywords = st.sidebar.multiselect(
+            "Select or deselect keywords:",
+            options=st.session_state.keywords,
+            default=st.session_state.keywords
+        )
+        
+        new_keyword = st.sidebar.text_input("Add a new keyword:")
+        if st.sidebar.button("Add Keyword", key="add_keyword_button"):
+            if new_keyword and new_keyword not in selected_keywords:
+                selected_keywords.append(new_keyword)
+            elif new_keyword in selected_keywords:
+                st.sidebar.warning("This keyword already exists.")
+            else:
+                st.sidebar.warning("Please enter a keyword.")
+        
+        st.session_state.keywords = selected_keywords
+        
+        if st.sidebar.button("Apply Keywords", key="apply_keywords_button"):
+            keyword_preferences = match_keywords_to_questions(st.session_state.keywords)
+            st.session_state.preferences.update(keyword_preferences)
+            st.sidebar.success("Keywords applied to questionnaire!")
+    else:
+        st.sidebar.info("Extract keywords from your project description or add them manually.")
+
+
+
+
+################################################################################
+################################################################################
+
+
+#*************Defining the Questinaire funcution****************#
 
 # Initialize session state
 if 'step' not in st.session_state:
     st.session_state.step = 0
+if 'preferences' not in st.session_state:
     st.session_state.preferences = {}
+if 'keywords' not in st.session_state:
+    st.session_state.keywords = []
 
 def next_step():
     current_category = questions[st.session_state.step][0]
@@ -153,9 +265,13 @@ def recommend_licenses(scores):
 
 
 
-def main():
 
-# Title on one line, left-aligned
+
+################################################################################
+################################################################################
+
+
+def main():
     st.markdown("""
     <div class="title-container">
         <h1 class="title">🔮 Open Source License Wizard 🧙</h1>
@@ -165,11 +281,15 @@ def main():
     st.write("This wizard will help you choose the most appropriate open-source license for your project.")
 
 
+    # Add sidebar content
+    sidebar_content()
+
     # Debug information
     st.write("Debug: Current step", st.session_state.step)
     st.write("Debug: Number of question categories", len(questions))
 
-
+    
+    # Continue with the questionnaire
     if st.session_state.step < len(questions):
         category, category_questions = questions[st.session_state.step]
         st.markdown(f"<h3>🧹 {category}</h3>", unsafe_allow_html=True)
@@ -177,12 +297,15 @@ def main():
         for question, key in category_questions:
             st.session_state.preferences[key] = st.checkbox(question, value=st.session_state.preferences.get(key, False), key=key)
         
-        if st.button("Next", on_click=next_step):
+        if st.button("Next", key=f"next_button_{st.session_state.step}", on_click=next_step):
             pass
     else:
-        if st.button("🧙‍♂️ Get Recommendations 🧙‍♀️", key="get_recommendations"):
+        if st.button("🧙‍♂️ Get Recommendations 🧙‍♀️", key="get_recommendations_button"):
             scores = score_licenses(st.session_state.preferences)
             recommend_licenses(scores)
+
+
+
 
     # Footer with notes
     st.markdown("---")
