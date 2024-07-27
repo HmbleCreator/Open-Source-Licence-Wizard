@@ -105,3 +105,25 @@ venv.bak/
 
 # Streamlit specific
 .streamlit/
+
+# Python cache files
+.nltk_data/
+nltk_data/
+
+# Log files
+*.log
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Other files to ignore
+*.bak
+*.tmp
+*.pid
