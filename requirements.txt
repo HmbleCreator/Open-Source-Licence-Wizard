@@ -1,4 +1,3 @@
-python-collections
 streamlit
 nltk
 scikit-learn
