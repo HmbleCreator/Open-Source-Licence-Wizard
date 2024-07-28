@@ -132,12 +132,30 @@ def extract_keywords(text):
     tfidf_matrix = vectorizer.fit_transform([' '.join(filtered_tokens)])
     feature_names = vectorizer.get_feature_names_out()
     
-    # Get top 15 keywords (increased from 10 to give more options)
+    # Get top 15 keywords
     dense = tfidf_matrix.todense()
     episode = dense[0].tolist()[0]
     phrase_scores = [pair for pair in zip(range(0, len(episode)), episode) if pair[1] > 0]
     sorted_phrase_scores = sorted(phrase_scores, key=lambda t: t[1] * -1)
-    keywords = [feature_names[word_id] for (word_id, score) in sorted_phrase_scores[:15]]
+    
+    # Filter keywords relevant to open source licensing
+    relevant_keywords = [
+        'open source', 'license', 'commercial', 'distribution', 'modification',
+        'patent', 'trademark', 'copyright', 'attribution', 'copyleft',
+        'permissive', 'proprietary', 'software', 'code', 'share',
+        'derivative', 'compatible', 'restrictive', 'royalty-free', 'public domain',
+        'community', 'internal', 'developer', 'business', 'enterprise',
+        'collaboration', 'contribution', 'monetization', 'educational', 'research',
+        'ownership', 'third-party', 'dual-licensing', 'compatibility',
+        'control', 'derivatives', 'proprietary use', 'development model',
+        'legal compliance', 'risk', 'contributor agreement', 'warranty',
+        'indemnification', 'commercial use'
+    ]
+    
+    keywords = [
+        feature_names[word_id] for (word_id, score) in sorted_phrase_scores[:30]
+        if any(rk in feature_names[word_id] for rk in relevant_keywords)
+    ][:15]
     
     return keywords
 
@@ -169,6 +187,8 @@ def sidebar_content():
         if project_description:
             extracted_keywords = extract_keywords(project_description)
             st.session_state.keywords = extracted_keywords
+            if not extracted_keywords:
+                st.sidebar.warning("No relevant keywords found. Please provide more details about your project and its licensing needs.")
         else:
             st.sidebar.warning("Please provide a project description.")
 
@@ -280,15 +300,15 @@ def main():
 
     st.write("This wizard will help you choose the most appropriate open-source license for your project.")
 
-
     # Add sidebar content
     sidebar_content()
+
 
     # Debug information
     st.write("Debug: Current step", st.session_state.step)
     st.write("Debug: Number of question categories", len(questions))
 
-    
+
     # Continue with the questionnaire
     if st.session_state.step < len(questions):
         category, category_questions = questions[st.session_state.step]
@@ -304,9 +324,6 @@ def main():
             scores = score_licenses(st.session_state.preferences)
             recommend_licenses(scores)
 
-
-
-
     # Footer with notes
     st.markdown("---")
     st.markdown("### Disclaimer")
@@ -316,4 +333,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
