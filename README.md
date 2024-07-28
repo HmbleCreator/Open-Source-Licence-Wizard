@@ -1,5 +1,3 @@
-Here's an improved version of your README file for the Open-Source License Wizard, incorporating the new NLP feature that enhances license selection accuracy to 85-90%.
-
 ---
 
 # 🔮 Open-Source License Wizard 🧙‍♂️
@@ -16,7 +14,7 @@ Here's an improved version of your README file for the Open-Source License Wizar
 
 ## Introduction
 
-Banner Image
+![Banner Image](./assets/Isabella.png)
 
 The **Open Source License Wizard** is an interactive Streamlit application designed to assist developers in selecting the most appropriate open-source license for their projects. With its enchanting starry interface and intuitive questionnaire, this wizard simplifies the often complex process of license selection.
 
@@ -34,7 +32,7 @@ The **Open Source License Wizard** is an interactive Streamlit application desig
 
 ## Installation
 
-Flowchart
+![flowchart](./assets/flowchart.jpeg)
 
 ### Installation Steps
 
