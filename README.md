@@ -1,4 +1,4 @@
-# 🔮 Open Source License Wizard 🧙‍♂️
+# 🔮 Open-Source License Wizard 🧙‍♂️
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -12,15 +12,13 @@
 
 ## Introduction
 
-![Banner Image](./assets/tree.png)
+![Banner Image](./assets/Isabella.png)
 
-The Open Source License Wizard is an interactive Streamlit application designed to help developers choose the most appropriate open-source license for their projects. With its enchanting starry interface and intuitive questionnaire, this wizard simplifies the often complex process of license selection.
+The Open Source "License Wizard"is an interactive Streamlit application designed to help developers choose the most appropriate open-source license for their projects. With its enchanting starry interface and intuitive questionnaire, this wizard simplifies the often complex process of license selection.
 
 Our goal is to empower developers to make informed decisions about licensing their open-source projects, ensuring that their chosen license aligns with their project goals, community expectations, and legal requirements.
 
 ## Features
-
-![flowchart](./assets/flowchart.jpeg)
 
 Features Overview
 
@@ -31,6 +29,8 @@ Features Overview
 - **Responsive Design**: Works well on various screen sizes and devices.
 
 ## Installation
+
+![flowchart](./assets/flowchart.jpeg)
 
 Installation Steps
 

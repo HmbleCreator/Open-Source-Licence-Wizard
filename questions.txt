@@ -8,36 +8,43 @@
     ["Is your target audience primarily businesses or enterprises?", "business_audience"],
     ["Do you want to encourage collaboration and contributions from the community?", "encourage_contributions"],
     ["Do you plan to monetize the project directly or indirectly?", "monetization"],
-    ["Is your project aimed at educational or research purposes?", "educational"]
+    ["Is your project aimed at educational or research purposes?", "educational"],
+    ["None of the above", "none_project_goals"]
   ]],
   ["Intellectual Property and Rights", [
     ["Do you want to grant patent rights to users of your project?", "patent_rights"],
     ["Are there trademarks associated with your project that need protection?", "trademarks"],
-    ["Do you want to retain ownership of the code while allowing others to use it?", "retain_ownership"]
+    ["Do you want to retain ownership of the code while allowing others to use it?", "retain_ownership"],
+    ["None of the above", "none_ip_rights"]
   ]],
   ["License Compatibility", [
     ["Does your project incorporate third-party open-source components or libraries?", "third_party_components"],
     ["Are you considering dual licensing to offer different terms to different users?", "dual_licensing"],
-    ["Do you need your license to be compatible with specific other licenses?", "license_compatibility"]
+    ["Do you need your license to be compatible with specific other licenses?", "license_compatibility"],
+    ["None of the above", "none_license_compatibility"]
   ]],
   ["Desired Level of Control", [
     ["Do you want to impose strict rules on how others can modify or distribute your work?", "control_derivatives"],
     ["Is it important for you to require attribution for your original work?", "attribution"],
-    ["Do you want to limit the use of your project in proprietary software?", "limit_proprietary_use"]
+    ["Do you want to limit the use of your project in proprietary software?", "limit_proprietary_use"],
+    ["None of the above", "none_control"]
   ]],
   ["Community and Collaboration", [
     ["Is building a strong, active community around your project a priority?", "strong_community"],
     ["Do you prefer an open development model where contributions are welcome?", "open_development"],
-    ["Is fostering collaboration with other projects important to you?", "foster_collaboration"]
+    ["Is fostering collaboration with other projects important to you?", "foster_collaboration"],
+    ["None of the above", "none_community"]
   ]],
   ["Legal and Business Considerations", [
     ["Are there specific legal compliance requirements that your project must meet?", "legal_compliance"],
     ["Is minimizing legal and business risks a top priority for you?", "minimize_risks"],
-    ["Do you need to ensure that contributors agree to specific terms before contributing?", "contributor_agreement"]
+    ["Do you need to ensure that contributors agree to specific terms before contributing?", "contributor_agreement"],
+    ["None of the above", "none_legal"]
   ]],
   ["License Terms and Conditions", [
     ["Do you want to provide warranties or guarantees for the software?", "warranties"],
     ["Do you want to include indemnification clauses to protect yourself?", "indemnification"],
-    ["Are you considering whether to allow commercial use of your project?", "allow_commercial_use"]
+    ["Are you considering whether to allow commercial use of your project?", "allow_commercial_use"],
+    ["None of the above", "none_terms"]
   ]]
 ]
