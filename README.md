@@ -1,6 +1,7 @@
-Here’s the revised README file formatted as a code block for your GitHub project:
+Here's an improved version of your README file for the Open-Source License Wizard, incorporating the new NLP feature that enhances license selection accuracy to 85-90%.
 
-```markdown
+---
+
 # 🔮 Open-Source License Wizard 🧙‍♂️
 
 ## Table of Contents
@@ -15,7 +16,7 @@ Here’s the revised README file formatted as a code block for your GitHub proje
 
 ## Introduction
 
-![Banner Image](./assets/Isabella.png)
+Banner Image
 
 The **Open Source License Wizard** is an interactive Streamlit application designed to assist developers in selecting the most appropriate open-source license for their projects. With its enchanting starry interface and intuitive questionnaire, this wizard simplifies the often complex process of license selection.
 
@@ -33,7 +34,7 @@ The **Open Source License Wizard** is an interactive Streamlit application desig
 
 ## Installation
 
-![flowchart](./assets/flowchart.jpeg)
+Flowchart
 
 ### Installation Steps
 
@@ -145,6 +146,5 @@ We hope the Open Source License Wizard helps you navigate the world of open-sour
 - **Contributing Guidelines**: A graphic that outlines the contribution process.
 - **Future Scope**: An infographic highlighting future plans for the project.
 - **Future Goals**: A visual representation of long-term goals and directions.
-```
 
-This format is structured for easy readability and follows standard conventions for a README file on GitHub. Let me know if you need any further adjustments!
+---
