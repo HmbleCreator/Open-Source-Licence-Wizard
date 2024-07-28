@@ -143,7 +143,13 @@ def extract_keywords(text):
         'open source', 'license', 'commercial', 'distribution', 'modification',
         'patent', 'trademark', 'copyright', 'attribution', 'copyleft',
         'permissive', 'proprietary', 'software', 'code', 'share',
-        'derivative', 'compatible', 'restrictive', 'royalty-free', 'public domain'
+        'derivative', 'compatible', 'restrictive', 'royalty-free', 'public domain',
+        'community', 'internal', 'developer', 'business', 'enterprise',
+        'collaboration', 'contribution', 'monetization', 'educational', 'research',
+        'ownership', 'third-party', 'dual-licensing', 'compatibility',
+        'control', 'derivatives', 'proprietary use', 'development model',
+        'legal compliance', 'risk', 'contributor agreement', 'warranty',
+        'indemnification', 'commercial use'
     ]
     
     keywords = [

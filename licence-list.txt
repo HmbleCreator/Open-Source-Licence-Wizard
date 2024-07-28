@@ -1,492 +1,104 @@
 {
-    "Artistic-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "LPL-1.02": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "BSD-2-Clause": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Zlib": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "CDDL-1.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "MPL-1.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "EUPL-1.2": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "LGPL": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "EPL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "OSL-3.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "CERN-2-Permissive": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "MS-RL": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "QPL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "AAL": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "OLDAP-2.8": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "APSL-2.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "EFL-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Artistic-1.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "CERN-2-Strongly-Reciprocal": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "Unlicense": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "CERN-2-Weakly-Reciprocal": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "EPL-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "Entessa": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "MulanPSL-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "SISSL": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "LiLiQ-R-1.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "MIT-0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Multics": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "HPND": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "CPAL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "BSD-3-Clause-LBNL": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "LiLiQ-Rplus-1.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "AGPL-3.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "OCLC-2.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "ECL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "ZPL-2.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "Fair": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "MS-PL": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "Xnet": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "MPL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "EFL-1.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "OSET-PL-2.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "CATOSL-1.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "AFL-3.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "CAL-1.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "BSD-2-Clause-Patent": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "RPL-1.1": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "UCL-1.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "RPL-1.5": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "NPOSL-3.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "SimPL-2.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "OFL-1.1": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Unicode License Agreement": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "GPL": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "CeCILL-2.1": {
-        "permissive": true,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "LiLiQ-P-1.1": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Apache-1.1": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "IPA": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "ECL-2.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "NASA-1.3": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "BSD-3-Clause": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Apache-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "MPL-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "MIT": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "0BSD": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "BSD-1-Clause": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "APL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "UPL": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": true,
-        "business_friendly": true
-    },
-    "PostgreSQL": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "NCSA": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "ZPL-2.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "EUDatagrid": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "Frameworx-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "IPL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": true,
-        "business_friendly": false
-    },
-    "LPPL-1.3c": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "Motosoto": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "Naumen": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "NGPL": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "Nokia": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly": false
-    },
-    "Python-2.0": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "CNRI-Python": {
-        "permissive": true,
-        "copyleft": false,
-        "patent_protection": false,
-        "business_friendly": true
-    },
-    "RPSL-1.0": {
-        "permissive": false,
-        "copyleft": true,
-        "patent_protection": false,
-        "business_friendly":
+  "Apache-2.0": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "BSD-3-Clause": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "BSD-2-Clause": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "GPL": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "LGPL": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "MIT": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "MPL-2.0": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "CDDL-1.0": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "EPL-2.0": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "CeCILL-2.1": { "permissive": true, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "LiLiQ-P-1.1": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "LiLiQ-R-1.1": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": true },
+  "LiLiQ-Rplus-1.1": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "MulanPSL-2.0": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "BSD-2-Clause-Patent": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "CERN-2-Permissive": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "CERN-2-Weakly-Reciprocal": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "CERN-2-Strongly-Reciprocal": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "ECL-2.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "IPA": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "BSD-3-Clause-LBNL": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "NASA-1.3": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "OSET-PL-2.1": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "OFL-1.1": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Unicode License Agreement": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Unlicense": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "UCL-1.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "0BSD": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "BSD-1-Clause": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "APL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "Artistic-2.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "MIT-0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "OSL-3.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "QPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "UPL": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "Zlib": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "AFL-3.0": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "AAL": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "EFL-2.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Fair": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "HPND": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "LPL-1.02": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "OLDAP-2.8": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "PostgreSQL": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "NCSA": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Xnet": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "ZPL-2.1": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "APSL-2.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "CATOSL-1.1": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "eCos-2.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "EUDatagrid": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "Entessa": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Frameworx-1.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "IPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "LPPL-1.3c": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Motosoto": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Multics": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Naumen": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "NGPL": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Nokia": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "OCLC-2.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Python-2.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "CNRI-Python": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "RPSL-1.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "RSCPL": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Sleepycat": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "SPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "Watcom-1.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "W3C": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "WXwindows": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Apache-1.1": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "Artistic-1.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "CPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "EPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "ECL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "EFL-1.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "EUPL-1.1": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "LPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "MPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "MPL-1.1": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": true },
+  "OSL-2.1": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "PHP-3.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "RPL-1.1": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "ZPL-2.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "CUA-OPL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "Intel": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "Jabber": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "CVW": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "SISSL": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "BSL-1.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "CAL-1.0": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "CPAL-1.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "AGPL-3.0": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "ISC": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "MS-PL": { "permissive": true, "copyleft": false, "patent_protection": true, "business_friendly": true },
+  "MS-RL": { "permissive": false, "copyleft": true, "patent_protection": true, "business_friendly": false },
+  "MirOS": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "NPOSL-3.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "NTP": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "OGTSL": { "permissive": true, "copyleft": false, "patent_protection": false, "business_friendly": true },
+  "RPL-1.5": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false },
+  "SimPL-2.0": { "permissive": false, "copyleft": true, "patent_protection": false, "business_friendly": false }
+}
