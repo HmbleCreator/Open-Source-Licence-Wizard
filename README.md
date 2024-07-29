@@ -83,6 +83,8 @@ The Open Source License Wizard employs a sophisticated scoring system enhanced b
 
 ## Contributing
 
+![contri_flowchart](./assets/contri_flowchart.png)
+
 ### Contributing Guidelines
 
 We welcome contributions to the Open Source License Wizard! If you'd like to contribute, please follow these steps:
